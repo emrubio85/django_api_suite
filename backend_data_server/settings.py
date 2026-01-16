@@ -27,7 +27,7 @@ SECRET_KEY = "django-insecure-qx3f_q@5b!o5$@daownht@%w4m_6!ha&o^%yrsw4p1oh45et$x
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['vfalconi.pythonanywhere.com']
 
 
 # Application definition
@@ -126,6 +126,7 @@ STATIC_URL = "static/"
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, STATIC_URL),
 ]
+STATIC_ROOT = "assets/"
 
 FIREBASE_CREDENTIALS_PATH = credentials.Certificate("secrets/landing-key.json")
 firebase_admin.initialize_app(FIREBASE_CREDENTIALS_PATH, {
